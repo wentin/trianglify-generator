@@ -71,7 +71,7 @@ module.exports = (function (_React$Component) {
               null,
               React.createElement(
                 "a",
-                { href: "https://github.com/qrohlf/trianglify-demo" },
+                { href: "https://github.com/qrohlf/trianglify-generator" },
                 React.createElement("span", { className: "icon icon-github" }),
                 " GitHub"
               ),

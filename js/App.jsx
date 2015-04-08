@@ -2,6 +2,7 @@ let React = require('react/addons');
 let Controls = require('./Controls.jsx');
 let Display = require('./Display.jsx');
 let Trianglify = require('trianglify');
+let TrianglifyVersion = require('trianglify/package.json').version;
 let update = React.addons.update;
 
 module.exports = class App extends React.Component {
@@ -15,7 +16,7 @@ module.exports = class App extends React.Component {
     this.state.opts.seed = Math.random();
     this.state.opts.width = 1920;
     this.state.opts.height = 1080;
-	}
+	} 
 
   handleOptionChange(option) {
     console.log(this.state);
@@ -23,17 +24,16 @@ module.exports = class App extends React.Component {
     let newState = update(this.state, {opts: {$merge: option}});
     console.log(newState);
     this.setState(newState);
-  }
+  } 
 
   render() {
     return (
       <div id="app">
         <header>
-          <h1><img src="images/header.png" />Trianglify Image Generator</h1>
+          <h1><img src="images/header.png" />Trianglify Generator</h1>
           <nav>
-            <a href="#about">About</a>
-            <a href="github">GitHub</a>
-            <a href="https://qrohlf.com">Author</a>
+            <a href="http://qrohlf.com/">Author</a>
+            <a href="https://github.com/qrohlf/trianglify-demo">GitHub</a>
           </nav>
         </header>
         <div className="main">

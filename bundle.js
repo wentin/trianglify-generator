@@ -231,7 +231,7 @@ module.exports = (function (_React$Component) {
                 this.props.opts.cell_size
               )
             ),
-            React.createElement("input", { type: "range", min: "50", max: "400", step: "10",
+            React.createElement("input", { type: "range", min: "10", max: "400", step: "5",
               value: this.props.opts.cell_size,
               onChange: function (e) {
                 return handleOptionChange({ cell_size: parseInt(e.target.value) });

@@ -16,6 +16,7 @@ module.exports = class App extends React.Component {
     this.state.opts.seed = Math.random();
     this.state.opts.width = 1920;
     this.state.opts.height = 1080;
+    this.state.opts.cell_size = 150; //because we're scaling
 	} 
 
   handleOptionChange(option) {
@@ -32,7 +33,7 @@ module.exports = class App extends React.Component {
         <header>
           <h1><img src="images/header.png" />Trianglify Generator</h1>
           <nav>
-            <a href="https://github.com/qrohlf/trianglify-demo"><span className="icon icon-github" /> GitHub</a>
+            <a href="https://github.com/qrohlf/trianglify-generator"><span className="icon icon-github" /> GitHub</a>
             <a href="http://qrohlf.com/"><span className="icon icon-user" /> By @qrohlf</a>
           </nav>
         </header>

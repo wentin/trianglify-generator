@@ -32,8 +32,8 @@ module.exports = class App extends React.Component {
         <header>
           <h1><img src="images/header.png" />Trianglify Generator</h1>
           <nav>
-            <a href="http://qrohlf.com/">Author</a>
-            <a href="https://github.com/qrohlf/trianglify-demo">GitHub</a>
+            <a href="https://github.com/qrohlf/trianglify-demo"><span className="icon icon-github" /> GitHub</a>
+            <a href="http://qrohlf.com/"><span className="icon icon-user" /> By @qrohlf</a>
           </nav>
         </header>
         <div className="main">

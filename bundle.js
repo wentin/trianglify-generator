@@ -38,6 +38,7 @@ module.exports = (function (_React$Component) {
     this.state.opts.seed = Math.random();
     this.state.opts.width = 1920;
     this.state.opts.height = 1080;
+    this.state.opts.cell_size = 150; //because we're scaling
   }
 
   _inherits(App, _React$Component);

@@ -180,6 +180,10 @@ header {
     border: none;
     padding: 5px;
     margin: 1rem 0;
+
+    &:focus, &:hover {
+      background: darken(white, 20%);
+    }
   }
 
   .options {
